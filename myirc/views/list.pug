@@ -1,0 +1,24 @@
+html
+    head
+        title= "Real time web chat"
+        script(src='/javascripts/chat.js')
+        script(src='/socket.io/socket.io.js')
+        script(src='/javascripts/jquery-1.10.1.min.js')
+        link(href='/stylesheets/style.css', rel='stylesheet')
+    body
+        #tabcontrol
+        button(id='add_channel') Ajouter chaine
+        #tablist
+            ul
+            li
+            a(href='#tab1' id='tab1') Chanell
+            li
+            a(href='#tab2' id='tab2') chnee
+        #content(style='width: 500px; height: 300px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+
+        .controls
+            input.field(style='width:350px;', id='field')
+            input.send(type='submit', value='send', id='send')
+
+
+

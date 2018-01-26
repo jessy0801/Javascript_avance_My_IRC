@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul#header
+      li: a(href="/create") Create channel
+      li: a(href="/list") List channel
+        li: a(href="/logout") Log-out
+        li: a(href="/signup") Sign in
+        li: a(href="/login") Login
+
+    block content
